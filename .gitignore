@@ -38,6 +38,7 @@ checkpoints/
 dist/
 build/
 *.egg-info/
+site/
 
 # OS-specific files
 .DS_Store

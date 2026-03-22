@@ -51,6 +51,13 @@ dev = [
     "ipywidgets>=8.1.7",
     "pre-commit>=4.2.0",
 ]
+docs = [
+    "mkdocs>=1.6.0,<1.7.0",
+    "mkdocs-material>=9.0.0,<10.0.0",
+    "pymdown-extensions",
+    "mkdocs-jupyter>=0.25.0,<0.26.0",
+    "mkdocs-glightbox",
+]
 
 
 # Ruff global configuration for linting & formatting

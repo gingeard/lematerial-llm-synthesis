@@ -1,0 +1,88 @@
+site_name: LeMaterial-Synthesis
+site_description: An open-source multi-modal toolbox for extracting structured synthesis procedures and performance data from materials science literature at scale
+site_author: LeMaterial Team
+
+repo_url: https://github.com/LeMaterial/lematerial-llm-synthesis
+edit_uri: ""
+
+nav:
+  - Home: index.md
+  - Tutorials:
+      - Overview: tutorials/index.md
+      - Getting Started: tutorials/getting_started.md
+  - How-to Guides:
+      - Overview: how_to/index.md
+      - Extract from HuggingFace: how_to/extract_huggingface.md
+      - Extract Locally: how_to/extract_local.md
+      - Contribute to Documentation: how_to/contribute_to_the_documentation.md
+  - Explanation:
+      - Overview: explanation/index.md
+      - What is LeMat-Synth?: explanation/what_is_lemat_synth.md
+      - Architecture & Pipeline: explanation/architecture.md
+  - Reference:
+      - Overview: reference/index.md
+      - Configuration: reference/configuration.md
+      - Bibliography: reference/bibliography.md
+
+plugins:
+  - search
+  - glightbox
+  - mkdocs-jupyter:
+      include_source: true
+      ignore_h1_titles: true
+      execute: false
+      include_requirejs: true
+
+theme:
+  name: material
+  palette:
+    primary: "#1a73e8"
+    accent: "#00897b"
+  font:
+    text: "Titillium Web"
+  logo: assets/lematerial-logo.png
+  favicon: assets/lematerial-logo.png
+  features:
+    - navigation.instant
+    - navigation.path
+    - navigation.footer
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+    - search.share
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: True
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.extra
+
+extra:
+  generator: false
+
+use_directory_urls: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.plot.ly/plotly-2.26.0.min.js
