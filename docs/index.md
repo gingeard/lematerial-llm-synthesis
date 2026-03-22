@@ -1,43 +1,23 @@
-# <img src="assets/lematerial-logo.png" alt="LeMaterial-Synthesis logo" width="400" />
+# <img src="assets/lematerial-logo-light.png" alt="LeMaterial-Synthesis logo" width="400" class="only-light" /><img src="assets/lematerial-logo.png" alt="LeMaterial-Synthesis logo" width="400" class="only-dark" />
 
 An open-source multi-modal toolbox for extracting structured synthesis procedures and performance data from materials science literature at scale.
 
 <div markdown="block" class="action-buttons">
   <a href="https://arxiv.org/abs/2510.26824" class="md-button md-button--primary action-button">Paper</a>
   <a href="https://huggingface.co/datasets/LeMaterial/LeMat-Synth" class="md-button md-button--primary action-button">Dataset</a>
-  <a href="https://github.com/LeMaterial/lematerial-llm-synthesis" class="md-button action-button">GitHub</a>
+  <a href="https://github.com/LeMaterial/lematerial-llm-synthesis" class="md-button md-button--primary action-button">GitHub</a>
 </div>
 
-## Getting Started
+## Documentation
 
 <div markdown="block" class="framework-grid">
 
 <div markdown="block">
 
-### Tutorials
-**Learning-oriented guides**
-
-Step-by-step tutorials to get started with LeMat-Synth: installation, first extraction, and understanding the outputs.
-
-[**Explore Tutorials**](tutorials/index.md)
-</div>
-
-<div markdown="block">
-
-### How-to Guides
-**Task-oriented instructions**
-
-Practical recipes for common tasks: extracting from HuggingFace, local extraction, and contributing to the project.
-
-[**Browse How-to Guides**](how_to/index.md)
-</div>
-
-<div markdown="block">
-
 ### Explanation
-**Understanding-oriented context**
+**Concepts & architecture**
 
-Understand LeMat-Synth's architecture, the multi-modal extraction pipeline, and the design decisions behind the toolbox.
+Understand what LeMat-Synth is, how the multi-modal extraction pipeline works, and the design decisions behind the toolbox.
 
 [**Read Explanations**](explanation/index.md)
 </div>
@@ -45,11 +25,31 @@ Understand LeMat-Synth's architecture, the multi-modal extraction pipeline, and 
 <div markdown="block">
 
 ### Reference
-**Information-oriented documentation**
+**Configuration & data models**
 
-Configuration reference, Hydra config options, and bibliographic resources.
+Full reference for Hydra configs, supported LLMs, synthesis ontology schema, and bibliographic resources.
 
 [**View Reference**](reference/index.md)
+</div>
+
+<div markdown="block">
+
+### Tutorials
+**Step-by-step learning**
+
+Install the toolbox, run your first extraction, and explore interactive Jupyter notebooks with real data.
+
+[**Explore Tutorials**](tutorials/index.md)
+</div>
+
+<div markdown="block">
+
+### How-to Guides
+**Practical recipes**
+
+Extract from HuggingFace or locally, run case studies, customize the pipeline, and contribute to the project.
+
+[**Browse How-to Guides**](how_to/index.md)
 </div>
 
 </div>

@@ -4,7 +4,7 @@ Run extraction on local markdown files instead of the HuggingFace dataset.
 
 ## Usage
 
-```bash
+```text
 uv run examples/scripts/extract_synthesis_procedure_from_text.py \
   data_loader=local \
   data_loader.architecture.data_dir="/path/to/markdown" \

@@ -46,6 +46,15 @@
     margin: 0 auto;
 }
 
+/* Theme-aware logo switching */
+[data-md-color-scheme="default"] .only-dark {
+    display: none;
+}
+
+[data-md-color-scheme="slate"] .only-light {
+    display: none;
+}
+
 /* Framework grid - Diataxis section cards */
 .framework-grid {
     display: grid;
@@ -89,6 +98,41 @@
 .framework-grid a:hover {
     color: #00897b;
     text-decoration: underline;
+}
+
+/* Dark mode overrides for cards and buttons */
+[data-md-color-scheme="slate"] .framework-grid div {
+    background-color: #2e303e;
+    border-color: #404258;
+}
+
+[data-md-color-scheme="slate"] .framework-grid div:hover {
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+[data-md-color-scheme="slate"] .framework-grid p {
+    color: #a0a4b0;
+}
+
+[data-md-color-scheme="slate"] .md-button.action-button:not(.md-button--primary) {
+    background-color: #2e303e !important;
+    color: #a0a4b0 !important;
+    border-color: #404258 !important;
+}
+
+[data-md-color-scheme="slate"] .md-button.action-button:not(.md-button--primary):hover {
+    background-color: #3a3d4e !important;
+    color: #1a73e8 !important;
+    border-color: #1a73e8 !important;
+}
+
+[data-md-color-scheme="slate"] .md-header, [data-md-color-scheme="slate"] .md-header__inner {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+    background-color: #1e1e2e;
 }
 
 /* Action buttons styling */
@@ -191,18 +235,7 @@
     overflow-x: auto;
 }
 
-/* Hide right TOC sidebar on notebook pages */
-body:has(.jupyter-wrapper) .md-sidebar--secondary {
-    display: none;
-}
-
-body:has(.jupyter-wrapper) .md-content {
-    max-width: 100%;
-}
-
-body:has(.jupyter-wrapper) .md-main__inner {
-    max-width: none;
-}
+/* Keep notebook pages consistent with other pages */
 
 /* Code copy button */
 .md-clipboard {

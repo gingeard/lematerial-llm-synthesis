@@ -22,5 +22,11 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Prepare notebooks
+        run: make docs-prepare
+
       - name: Build and deploy docs
         run: uv run --group docs mkdocs gh-deploy --force --remote-branch gh-pages
+        env:
+          NO_MKDOCS_2_WARNING: 1
+          JUPYTER_PLATFORM_DIRS: 1

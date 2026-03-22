@@ -4,7 +4,7 @@
 
 Install docs dependencies:
 
-```bash
+```text
 uv sync --group docs
 ```
 
@@ -12,7 +12,7 @@ uv sync --group docs
 
 Start the development server:
 
-```bash
+```text
 uv run mkdocs serve
 ```
 

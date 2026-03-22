@@ -39,6 +39,7 @@ dist/
 build/
 *.egg-info/
 site/
+docs/notebooks/
 
 # OS-specific files
 .DS_Store
